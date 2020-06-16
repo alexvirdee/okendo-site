@@ -1,0 +1,66 @@
+.header-text {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    padding: 25px;
+    font-size: 20px;
+
+    .title {
+        color: #D4D5D7;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        font-size: 1.266rem;
+        font-weight: 400;
+    } 
+}
+
+
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    .grid-outterGutter {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-steps {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+    }
+
+    .step {
+       padding-top: 18px;
+       text-align: center;
+    }
+
+    .step a {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        flex: 0 0 20%;
+        display: block;
+    }
+
+    .step a:after {
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 4px rgba(0,0,0,.3);
+        content: "";
+        display: block;
+        height: 24px;
+        left: 50%;
+        padding-left: 1px;
+        padding-top: 1px;
+        position: absolute;
+        bottom: 10px;
+        transform: translate(-50%,-50%);
+        width: 24px;
+    }
+}
