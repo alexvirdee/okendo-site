@@ -14,17 +14,14 @@ const Header = () => (
                     <div className='step'>
                         <a href="#">Review</a>   
                     </div>
-                    <div className='step'>
-                       
-                    <a href="#">Ratings</a>  
+                    <div className='step'>                
+                        <a href="#">Ratings</a>  
                     </div>
-                    <div className='step'>
-                        
-                    <a href="#">Media</a>  
+                    <div className='step'>         
+                        <a href="#">Media</a>  
                     </div>
-                    <div className='step'>
-                        
-                    <a href="#">Confirm</a>  
+                    <div className='step'>                
+                        <a href="#">Confirm</a>  
                     </div>
                 </nav>
             </div>
