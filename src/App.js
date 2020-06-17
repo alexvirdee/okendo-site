@@ -6,14 +6,15 @@ import './App.css';
 import Header from './components/header/header.component';
 
 import ReviewStep from './steps/review/review.component';
+import RatingsStep from './steps/ratings/ratings.component';
 
 class App extends React.Component {
 
   render() {
     return (
       <div className='app'>
-      <Header />
       <BrowserRouter>
+      <Header />
         <Switch>
           <Route exact path="/" render={() => {
             return (
@@ -21,6 +22,7 @@ class App extends React.Component {
             )
           }} />
           <Route exact path="/review" component={ReviewStep} />
+          <Route exact path="/ratings" component={RatingsStep} />
         </Switch>
       </BrowserRouter>
       </div>

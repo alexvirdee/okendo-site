@@ -1,33 +1,31 @@
 import React from 'react';
+import { withRouter, Link } from 'react-router-dom';
 
 import './header.styles.scss';
 
 class Header extends React.Component {
-    state = {
-        title: 'Review'
-    };
-
     render() {
+        const title = this.props.location.pathname.slice(1);
         return (
             <div className='header'>
             <div className='header-text'>
                 <h1 className='title'>1815 Rose Gold Chronograph Watch - Brown Croco Strap</h1>
-        <h2 className='subtitle'>{this.state.title}</h2>
+        <h2 style={{textTransform: 'capitalize'}} className='subtitle'>{title}</h2>
             </div>
             <div className='nav-container'>
                 <div className='grid-outterGutter'>
                     <nav className='header-steps'>
                         <div className='step'>
-        <a className='review-btn' href="#">Review</a>   
+        <Link className='review-btn' to="/review">Review</Link>   
                         </div>
                         <div className='step'>                
-                            <a href="#">Ratings</a>  
+                            <Link to="/ratings">Ratings</Link>  
                         </div>
                         <div className='step'>         
-                            <a href="#">Media</a>  
+                            <Link to="/media">Media</Link>  
                         </div>
                         <div className='step'>                
-                            <a href="#">Confirm</a>  
+                            <Link to="/login">Confirm</Link> 
                         </div>
                     </nav>
                 </div>
@@ -38,4 +36,4 @@ class Header extends React.Component {
 }
 
 
-export default Header;
+export default withRouter(Header);

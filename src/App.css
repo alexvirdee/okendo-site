@@ -19,10 +19,11 @@
     font-family: 'Open-sans', sans-serif;
 }
 
-.c-toggleSwitch-input {
+/* .c-toggleSwitch-input {
   left: -9999px;
   position: absolute;
-}
+} */
+
 
 .c-toggleSwitch-label {
   background-color: #d9d9d9;
