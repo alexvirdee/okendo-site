@@ -102,8 +102,23 @@
          }
 
          .option-inputs-item {
-             display: inline-block;
-             margin: 0 4px 8px 0;
+             margin: 4px;
+         }
+
+         .option-input-control {
+            display: flex;
+            justify-content: flex-start;
+         }
+
+
+         .option-input-control span {
+            background-color: #d9d9d9;
+            border: 2px solid #d9d9d9;
+            border-radius: 4px;
+            padding: 4px 8px;
+            transition: background .2s ease;
+            font-weight: 400;
+            max-width: 100%;
          }
      }
 

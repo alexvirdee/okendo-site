@@ -129,7 +129,7 @@ const RatingsForm = () => (
                                     </div>
 
                                     <div classNmae='option-inputs'>
-                                    <div className='option-inputs-item'>
+                                    <div className='option-inputs-item flex-start'>
                                         <div className='option-input-control'>
                                             <span>High Quality</span>
                                         </div>
