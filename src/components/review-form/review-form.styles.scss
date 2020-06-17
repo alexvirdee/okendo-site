@@ -17,19 +17,6 @@ main {
         margin-right: auto;
     }
 
-    .gutter {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .card {
-        background-color: #fff;
-        border-radius: 4px;
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
-        overflow: hidden;
-        padding: 16px;
-    }
-
     .rating, .title, .review, .recommend {
         margin-bottom: 16px;
     }
@@ -37,8 +24,6 @@ main {
     .stars {
         margin-top: 6px;
     }
-
-  
 
     .title label {
         margin-bottom: 8px;

@@ -10,7 +10,7 @@ class Header extends React.Component {
             <div className='header'>
             <div className='header-text'>
                 <h1 className='title'>1815 Rose Gold Chronograph Watch - Brown Croco Strap</h1>
-        <h2 style={{textTransform: 'capitalize'}} className='subtitle'>{title}</h2>
+             <h2 style={{textTransform: 'capitalize'}} className='subtitle'>{title}</h2>
             </div>
             <div className='nav-container'>
                 <div className='grid-outterGutter'>

@@ -1,0 +1,123 @@
+.review-main {
+    flex: 1 0 auto;
+
+    .u-container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+
+    .range-attributes {
+        margin-bottom: 32px;
+    
+        .range {
+            margin-bottom: 16px;
+    
+            .range-label {
+                display: inline-block;
+                font-weight: 400;
+                max-width: 100%;
+    
+            }
+            .u-assistive-hidden {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+                }
+    
+                .c-numberRangeInput-rater {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0 -.5em;
+                }
+    
+            .c-numberRangeInput-rater-label {
+                color: #272d45;
+                cursor: pointer;
+                height: 3em;
+                line-height: 3;
+                position: relative;
+                text-align: center;
+                transition: color .2s;
+                width: 3em;
+                z-index: 1;
+            }
+    
+            .c-numberRangeInput-rater-label::before {
+                background: #d9d9d9;
+                border-radius: 50%;
+                content: "";
+                height: 2em;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                transition: width .2s,height .2s,margin .2s;
+                width: 2em;
+                z-index: -1;
+            }
+    
+            .c-numberRangInput-rater-spacer {
+                flex: 1 1 0%;
+                position: relative;
+            }
+    
+            .c-numberRangInput-rater-spacer::before {
+                background: #d9d9d9;
+                content: "";
+                height: 4px;
+                left: -1em;
+                margin-top: -2px;
+                position: absolute;
+                right: -1em;
+                top: 50%;
+            }
+    
+           }
+        }
+
+     .range-input-labels {
+         display: flex;
+         line-height: 1;
+
+
+         justify-content: space-between;
+    
+     }
+
+}
+
+.ratings-footer {
+    margin: 32px auto 16px;
+    max-width: 100%;
+    padding: 0 16px;
+    width: 768px;
+}
+
+.ratings-footer-btn {
+    border-radius: 4px;
+    font-size: 1.266rem;
+    background: #00ca9b;
+    border-color: #00ca9b;
+    width: 100%;
+    line-height: 3.3;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.ratings-footer-btn {
+    border: 1px solid transparent;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
