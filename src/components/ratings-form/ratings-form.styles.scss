@@ -84,10 +84,27 @@
      .range-input-labels {
          display: flex;
          line-height: 1;
-
-
          justify-content: space-between;
-    
+        color: grey;
+     }
+
+     .general-value-attributes {
+         margin-bottom: 32px;
+
+         .options-text {
+             color: #8f9097;
+             font-size: .79rem;
+             margin-bottom: 8px;
+         }
+
+         .option-inputs {
+             margin-bottom: -8px;
+         }
+
+         .option-inputs-item {
+             display: inline-block;
+             margin: 0 4px 8px 0;
+         }
      }
 
 }
