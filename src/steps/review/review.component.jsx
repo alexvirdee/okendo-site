@@ -4,10 +4,18 @@ import ReviewForm from '../../components/review-form/review-form.component';
 
 import './review.styles.scss';
 
-const ReviewStep = () => (
-    <div className='review-step'>
-        <ReviewForm />
-    </div>
-)
+class ReviewStep extends React.Component {
+    componentDidMount() {
+        this.setState({ title: 'Review' })
+    }
+
+    render() {
+        return (
+            <div className='review-step'>
+            <ReviewForm />
+        </div>
+        )
+    }
+}
 
 export default ReviewStep;
