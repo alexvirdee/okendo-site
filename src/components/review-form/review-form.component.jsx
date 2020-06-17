@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rating from '@material-ui/lab/rating';
 import { withRouter, useHistory } from 'react-router-dom';
 
-import { useState } from 'react';
 
 import './review-form.styles.scss';
 

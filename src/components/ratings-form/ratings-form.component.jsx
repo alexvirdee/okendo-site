@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { withRouter, useHistory } from 'react-router-dom';
+
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { makeStyles } from '@material-ui/core/styles';
@@ -28,9 +30,31 @@ function countryToFlag(isoCode) {
     },
   });
 
+  const [formData, setFormData] = useState({
+      quality: 0,
+      design: 0,
+      experience: 0,
+      productStandouts: [],
+      age: null,
+      boughtFor: '',
+      country: ''
+  });
+
+  const { quality, design, experience, productStandouts, age, boughtFor, country } = formData;
+
+  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const history = useHistory();
+
+  const onSubmit = e => {
+      e.preventDefault();
+
+      history.push('/media');
+  }
+
     return (
         <div className='ratings-form'>
-        <form>
+        <form onSubmit={e => onSubmit(e)}>
             <main className='review-main'>
                 <div className='u-container'>
                     <div className='gutter'>
@@ -167,13 +191,13 @@ function countryToFlag(isoCode) {
                             </div>
                             <div className='shopper-value-attributes'>
                                 <legend>
-                                    <span>About You</span>
+                                    <span style={{fontWeight: 'bold'}}>About You</span>
                                 </legend>
 
                                 {/* Age Range */}
                                 <div className='shopper-attributes'>
                                     <div>Age Range</div>
-                                    <div>Choose one</div>
+                                    <div className='choose-option'>Choose <span>one</span></div>
                                     <div>
                                         <div className='age-option-inputs'>
                                             <div className='option-inputs-item'>
@@ -193,7 +217,7 @@ function countryToFlag(isoCode) {
                                     {/* Bought For Section */}
                                     <div className='bought-for'>
                                         <div>Bought For</div>
-                                        <div>Choose one</div>
+                                        <div className='choose-option'>Choose <span>one</span></div>
                                         <div>
                                             <div className='option-inputs'>
                                                 <div className='option-inpust-item'>
@@ -258,4 +282,4 @@ function countryToFlag(isoCode) {
 }
 
 
-export default RatingsForm;
+export default withRouter(RatingsForm);

@@ -7,6 +7,8 @@ import Header from './components/header/header.component';
 
 import ReviewStep from './steps/review/review.component';
 import RatingsStep from './steps/ratings/ratings.component';
+import MediaStep from './steps/media/media.component';
+import AuthStep from './steps/auth/auth.component';
 
 class App extends React.Component {
 
@@ -23,6 +25,8 @@ class App extends React.Component {
           }} />
           <Route exact path="/review" component={ReviewStep} />
           <Route exact path="/ratings" component={RatingsStep} />
+          <Route exact path="/media" component={MediaStep} />
+          <Route exact path="/login" component={AuthStep} />
         </Switch>
       </BrowserRouter>
       </div>
