@@ -23,10 +23,10 @@ main {
     font-family: 'Open-sans', sans-serif;
 }
 
-/* .c-toggleSwitch-input {
-  left: -9999px;
-  position: absolute;
-} */
+.c-toggleSwitch-input {
+  /* left: -9999px;
+  position: absolute; */
+}
 
 .gutter {
   padding-left: 16px;
@@ -50,7 +50,7 @@ main {
   padding: 8px 16px;
   text-align: center;
   transition: background .2s ease;
-  margin-right: 1px;
+  margin-right: 2px;
 }
 
 .c-button {
@@ -71,3 +71,4 @@ main {
   border-color: #00ca9b;
   color: #fff;
 }
+

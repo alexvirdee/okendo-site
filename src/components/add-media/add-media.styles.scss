@@ -28,6 +28,19 @@
         position: relative;
     }
 
+    .icon {
+        font-size: 20px;
+        left: 0;
+        line-height: 50px;
+        margin-top: -25px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 50px;
+        padding-top: 3px;
+        display: inline-block;
+    }
+
     .expander-list {
         border-radius: 0 0 5px 5px;
         border-top: 0;
@@ -38,13 +51,10 @@
         transition: all .15s ease-out,opacity .15s ease-out .15s;
 
         .expander-list-item {
-            cursor: pointer;
             border: inherit;
-
             border-top: 1px solid #d9d9d9;
             box-sizing: border-box;
             color: #272d45;
-            cursor: default;
             display: block;
             font-size: .889rem;
             line-height: 20px;
@@ -54,6 +64,47 @@
             text-align: left;
             width: 100%;
         }
+
+        .hidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .expander-list-item:hover {
+            background: #00ca9b;
+            color: #fff;
+        }
     }
 
+}
+
+.add-media-footer {
+    margin: 32px auto 16px;
+    max-width: 100%;
+    padding: 0 16px;
+    width: 768px;
+}
+
+.media-footer-btn {
+    border-radius: 4px;
+    font-size: 1.266rem;
+    width: 100%;
+    background: #00ca9b;
+    border-color: #00ca9b;
+    color: #fff;
+    text-align: center;
+    transition: background .3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 3.3;
 }

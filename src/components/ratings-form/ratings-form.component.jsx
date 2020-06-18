@@ -170,7 +170,7 @@ function countryToFlag(isoCode) {
                                     <div className='options-text'>
                                         <span> Choose up to 5 that best apply (optional)</span>
                                     </div>
-                                    <div classNmae='option-inputs'>
+                                    <div className='option-inputs'>
                                         <div className='option-inputs-item'>
                                         <div className='option-input-control'>
                                             <span>Accurate Timekeeping</span>
