@@ -8,8 +8,6 @@ import CameraAltIcon from '@material-ui/icons/CameraAlt';
 
 import './add-media.styles.scss';
 
-
-
 const AddMedia = ({ history }) => {
 
  const openCamera = e => {

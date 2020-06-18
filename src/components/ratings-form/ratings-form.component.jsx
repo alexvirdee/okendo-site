@@ -49,6 +49,8 @@ function countryToFlag(isoCode) {
   const onSubmit = e => {
       e.preventDefault();
 
+      console.log(formData);
+
       history.push('/media');
   }
 
@@ -65,26 +67,26 @@ function countryToFlag(isoCode) {
                                         {/* Main Product Ratings */}
                                         <label className='range-label'>Quality</label>
                                         <div className='c-numberRangeInput'>
-                                            <input type='range' className='u-assistive-hidden' id='number-range-quality' value='0' step='1' max='5' />
+                                            <input onChange={e => onChange(e)} type='range' className='u-assistive-hidden' id='number-range-quality' value='0' step='1' max='5' />
                                             <div className='c-numberRangeInput-rater'>
                                                 <div className='c-numberRangeInput-rater-label'>
-                                                    <div className='start'>1</div>
+                                                    <div className='start range-val'>1</div>
                                                 </div>
                                                 <div className='c-numberRangInput-rater-spacer'></div>
                                                 <div className='c-numberRangeInput-rater-label'>
-                                                    <div className='start'>2</div>
+                                                    <div className='start range-val'>2</div>
                                                 </div>
                                                 <div className='c-numberRangInput-rater-spacer'></div>
                                                 <div className='c-numberRangeInput-rater-label'>
-                                                    <div className='start'>3</div>
+                                                    <div className='start range-val'>3</div>
                                                 </div>
                                                 <div className='c-numberRangInput-rater-spacer'></div>
                                                 <div className='c-numberRangeInput-rater-label'>
-                                                    <div className='start'>4</div>
+                                                    <div className='start range-val'>4</div>
                                                 </div>
                                                 <div className='c-numberRangInput-rater-spacer'></div>
                                                 <div className='c-numberRangeInput-rater-label'>
-                                                    <div className='start'>5</div>
+                                                    <div className='start range-val'>5</div>
                                                 </div>
                                             </div>
                                             <div className='range-input-labels'>
