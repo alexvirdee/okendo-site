@@ -1,0 +1,85 @@
+.u-container {
+    max-width: 768px;
+    margin: 0 auto;
+
+    .auth-card {
+        padding: 16px;
+    }
+
+    .mb-medium {
+        margin-bottom: 16px;
+    }
+
+    .signIn {
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: default;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 12px 15px;
+        padding-left: 65px;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .signIn-google {
+        background: #df4a32;
+    }
+
+    .signIn-facebook {
+        background: #4862a1;
+    }
+
+    .divider {
+        color: #8f9097;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .divider::before {
+        margin-right: 16px;
+        background: #d9d9d9;
+        content: "";
+        display: block;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        height: 1px;
+    }
+
+    .divider::after {
+        margin-left: 16px;
+        background: #d9d9d9;
+        content: "";
+        display: block;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        height: 1px;
+    }
+
+    .singIn-guest {
+        border: 1px solid #d9d9d9;
+        color: #272d45;
+        padding: 12px 15px;
+    }
+
+    .signIn-guest-btn {
+        width: 100%;
+        text-align: inherit;
+        background: transparent;
+        border: 1px solid transparent;
+        display: inline-block;
+        font-size: .889rem;
+        margin-bottom: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+    }
+
+}
