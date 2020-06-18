@@ -9,7 +9,7 @@ const ConfirmAuth = () => {
                 <div className='gutter'>
                     <div className='card auth-card'>
                     <form>
-                    <input type="hidden" name="returnUrl" value="" autocomplete="off" />
+                    <input type="hidden" name="returnUrl" value="" autoComplete="off" />
                     <h2>Add your profile picture to your review!</h2>
                     <p className='mb-medium'>This helps other shoppers by adding authenticity to your review.</p>
                     <div className='profile-btns'>

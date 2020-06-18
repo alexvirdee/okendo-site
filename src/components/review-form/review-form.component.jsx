@@ -10,10 +10,10 @@ const ReviewForm = () => {
         rating: 0,
         title: '',
         review: '',
-        recommend: ''
+        recommendVal: ''
     })
 
-    const { rating, title, review, recommend } = formData;
+    const { rating, title, review, recommendVal } = formData;
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -21,9 +21,7 @@ const ReviewForm = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-
-        console.log(e);
-
+        console.log(formData);
 
         history.push('/ratings');
     }
@@ -41,8 +39,8 @@ const ReviewForm = () => {
                               <Rating 
                                 size="large"
                                 name="rating"
-                                value={rating}
                                 onChange={e => onChange(e)}
+                                value={rating}
                              />
                              </div>
                                 </div>
@@ -57,9 +55,9 @@ const ReviewForm = () => {
                                 <div className='recommend'>
                                     <label className='rec-label'>Would you recommend this product?</label>
                                     <div className='toggle-btns'>
-                                        <input type="radio" id='recommend-yes' value={recommend} name='recommend' onChange={e => onChange(e)} className='c-toggleSwitch-input' required/>
+                                        <input type="radio" id='recommend-yes' value={recommendVal} name='recommendVal' onChange={e => onChange(e)} className='c-toggleSwitch-input' required/>
                                         <label className="c-toggleSwitch-label"><span>YES</span></label>
-                                        <input type="radio" id='recommend-no' value={recommend} name='recommend' onChange={e => onChange(e)}  className='c-toggleSwitch-input' required/>
+                                        <input type="radio" id='recommend-no' value={recommendVal} name='recommendVal' onChange={e => onChange(e)}  className='c-toggleSwitch-input' required/>
                                         <label className="c-toggleSwitch-label"><span>NO</span></label>
                                     </div>
                                 </div>

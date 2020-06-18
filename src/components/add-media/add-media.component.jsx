@@ -1,4 +1,6 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+
 import VideocamIcon from '@material-ui/icons/Videocam';
 import AlbumIcon from '@material-ui/icons/Album';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
@@ -8,7 +10,7 @@ import './add-media.styles.scss';
 
 
 
-const AddMedia = () => {
+const AddMedia = ({ history }) => {
 
  const openCamera = e => {
         alert('Function should open camera');
@@ -84,10 +86,12 @@ const AddMedia = () => {
         </div>
       </main>
       <footer className="add-media-footer">
-        <button className="media-footer-btn">Skip</button>
+        <button onClick={() => {
+          history.push('/login');
+        }} className="media-footer-btn">Skip</button>
       </footer>
     </div>
   );
 };
 
-export default AddMedia;
+export default withRouter(AddMedia);
