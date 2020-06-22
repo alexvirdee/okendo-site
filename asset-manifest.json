@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/okendo-site/static/css/main.7e367690.chunk.css",
+    "main.js": "/okendo-site/static/js/main.b60a9fa2.chunk.js",
+    "runtime-main.js": "/okendo-site/static/js/runtime-main.1983425c.js",
+    "static/js/2.670a1d25.chunk.js": "/okendo-site/static/js/2.670a1d25.chunk.js",
+    "index.html": "/okendo-site/index.html",
+    "precache-manifest.c346b828e42c13930653c3d1105f73ba.js": "/okendo-site/precache-manifest.c346b828e42c13930653c3d1105f73ba.js",
+    "service-worker.js": "/okendo-site/service-worker.js",
+    "static/js/2.670a1d25.chunk.js.LICENSE.txt": "/okendo-site/static/js/2.670a1d25.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1983425c.js",
+    "static/js/2.670a1d25.chunk.js",
+    "static/css/main.7e367690.chunk.css",
+    "static/js/main.b60a9fa2.chunk.js"
+  ]
+}
